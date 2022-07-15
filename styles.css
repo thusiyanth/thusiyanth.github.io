@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/*speed scrolling*/
+html {  
+      scroll-behavior: smooth; 
+		
+}
+
+
+/*changed*/
+.hero{
+    position: relative;
+
+    
+    position: relative;
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 65px;
+    cursor: pointer;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+/*my detail class*/
+.detel{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+
+.detel h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+.font-face { font-family: JuneBug; src: url('JUNEBUG.TTF'); } 
+      h1 {
+         font-family: JuneBug
+		 
+      }
+
+span{
+    color: orange;
+    
+}
+
+.detel h3{
+	color: #8E1600;
+}
+
+.detel p{
+    color: #555;
+    line-height: auto;
+}
+
+.detel a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+	max-width: 100%;
+	max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+   /* height: 100%;
+	width :auto; */
+	max-height: 100%;
+	max-width: 100%;
+    position: absolute;
+    left: 50%;
+   /* bottom: 0;*/
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .girl{
+    left: 45%;
+}
+
+.social{
+    margin-left: 9%;
+    margin-top: auto;
+}
+
+.social a{
+    font-size: 30px;
+    color: #212121;
+    margin-right: 20px;
+}
+
+.social a:hover{
+    color: orange;
+}
+
+.test {
+    width: 100%;
+    height: auto;
+	}
+	
+/*
+****************************************************
+
+				Animation Art
+
+****************************************************
+*/
+
+.container{
+  position: absolute;
+
+  overflow: hidden;
+    background: #C04848;
+    background: -webkit-linear-gradient(to bottom, #480048, #C04848);
+    background: linear-gradient(to bottom, #480048, #C04848);
+
+}
+
+.elements div{
+  position:absolute;
+  width:60px;
+  height:60px;
+  background: transparent;
+  border:6px solid rgb(255,176,31);
+}
+.elements div:nth-child(1){
+  top:11%;
+  left:41%;
+  animation:animate 10s linear infinite;
+}
+.elements div:nth-child(2){
+  top:69%;
+  left:49%;
+  animation:animate 7s linear infinite;
+}
+.elements div:nth-child(3){
+  top:18%;
+  left:7%;
+  animation:animate 9s linear infinite;
+}
+.elements div:nth-child(4){
+  top:19%;
+  left:61%;
+  animation:animate 10s linear infinite;
+}
+.elements div:nth-child(5){
+  top:68%;
+  left:11%;
+  animation:animate 6s linear infinite;
+}
+.elements div:nth-child(6){
+  top:79%;
+  left:71%;
+  animation:animate 12s linear infinite;
+}
+.elements div:nth-child(7){
+  top:59%;
+  left:81%;
+  animation:animate 15s linear infinite;
+}
+.elements div:nth-child(8){
+  top:89%;
+  left:26%;
+  animation:animate 9s linear infinite;
+}
+.elements div:nth-child(9){
+  top:91%;
+  left:24%;
+  animation:animate 9s linear infinite;
+}
+.elements div:nth-child(10){
+  top:21%;
+  left:79%;
+  animation:animate 5s linear infinite;
+}
+.elements div:nth-child(11){
+  top:40%;
+  left:38%;
+  animation:animate 5s linear infinite;
+}
+
+@keyframes animate{
+  0%{
+    transform:scale(0) translateY(-90px) rotate(360deg);
+    opacity: 1;
+  }
+  100%{
+    transform:scale(1.3) translateY(-90px) rotate(-180deg);
+    border-radius: 50%;
+    opacity: 0;
+  }
+}
+/*
+
+
+*/
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* navigation bar animation*/
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  display: block;
+  transition: top 0.4s;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* project page profile css */
+.proj {
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: 300px 1fr;
+  gap: 1rem;
+  align-items: center;
+  max-width: 1175px;
+  margin: 0 auto;
+  font: 500 120%/1.5 system-ui;
+  background-color: white;
+  box-shadow: 0 2px 5px 0 rgba(1,1,1,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.proj img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 650px) {
+  body {
+    display: block;
+    font-size: 80%;
+  }
+.proj  p {
+    position: relative;
+    margin: -3rem 0 2rem 1rem;
+    padding: 1rem;
+    background: rgba(white, 0.8);
+  }
+
+}
