@@ -150,7 +150,7 @@ span{
 ****************************************************
 */
 
-.container{
+/*.container{
   position: absolute;
 
   overflow: hidden;
@@ -158,7 +158,7 @@ span{
     background: -webkit-linear-gradient(to bottom, #480048, #C04848);
     background: linear-gradient(to bottom, #480048, #C04848);
 
-}
+}*/
 
 .elements div{
   position:absolute;
