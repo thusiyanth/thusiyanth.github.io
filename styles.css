@@ -99,8 +99,9 @@ span{
 	max-width: 100%;
 	max-width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: 114px;
     right: 100px;
+	z-index: -1;
 }
 
 .images img{
@@ -116,7 +117,7 @@ span{
 	  position: absolute;
 	left: 139px;
 	top: 0px;
-	z-index: -1;
+	
 }
 
 .images:hover .shape{
@@ -171,16 +172,19 @@ span{
   height:60px;
   background: transparent;
   border:6px solid rgb(255,176,31);
+  
+  
 }
 .elements div:nth-child(1){
   top:11%;
   left:41%;
-  animation:animate 10s linear infinite;
+  animation:animate 5s linear infinite;
 }
 .elements div:nth-child(2){
   top:69%;
   left:49%;
   animation:animate 7s linear infinite;
+  border:6px solid rgb(255,255,255);
 }
 .elements div:nth-child(3){
   top:18%;
@@ -196,6 +200,7 @@ span{
   top:68%;
   left:11%;
   animation:animate 6s linear infinite;
+  border:6px solid rgb(24,56,85);
 }
 .elements div:nth-child(6){
   top:79%;
@@ -211,6 +216,7 @@ span{
   top:89%;
   left:26%;
   animation:animate 9s linear infinite;
+  border:6px solid rgb(154,132,100);
 }
 .elements div:nth-child(9){
   top:91%;
